@@ -5,7 +5,7 @@
 class projtest : public QObject
 {
     Q_OBJECT
-//
+//a
 public:
     projtest();
     ~projtest();
