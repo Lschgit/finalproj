@@ -6,4 +6,6 @@ CONFIG -= app_bundle
 
 TEMPLATE = app
 
-SOURCES +=  tst_projtest.cpp
+SOURCES += tst_projtest.cpp \
+        ../src/shop.cpp
+INCLUDEPATH += ../src
