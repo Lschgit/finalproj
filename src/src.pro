@@ -1,8 +1,8 @@
 QT -= gui
-
-CONFIG += c++11 console
+CONFIG += c++14 console
 CONFIG -= app_bundle
-
+QT += widgets
+QT += network
 # The following define makes your compiler emit warnings if you use
 # any Qt feature that has been marked deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
@@ -24,4 +24,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
+    client.h \
     shop.h
+
+DISTFILES += \
+    aa.txt \
+    shopstuff.txt

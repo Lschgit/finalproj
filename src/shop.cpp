@@ -18,3 +18,11 @@ std::string shop::checkPetTypes(std::string input){//checks if the input matches
     }
     return "0";
 }
+
+long long shop::getId() const {
+    return shopId;
+}
+
+void shop::setId(long shopId) {
+    this->shopId = shopId;
+}
