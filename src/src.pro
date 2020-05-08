@@ -15,6 +15,9 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+        animal.cpp \
+        cat.cpp \
+        dog.cpp \
         main.cpp \
         shop.cpp
 
@@ -24,7 +27,10 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
+    animal.h \
+    cat.h \
     client.h \
+    dog.h \
     shop.h
 
 DISTFILES += \

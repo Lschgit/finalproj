@@ -31,7 +31,7 @@ projtest::~projtest()
 
 void projtest::test_case1()
 {
-    shop testshop;
+    shop testshop(0);
     std::string petTest = "Cat";
     std::string petTest2 = "Cat";
     testshop.insertPetType(petTest);//inserts petTest into the shop's vector of pets

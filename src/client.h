@@ -113,7 +113,7 @@ public:
 
 
 
-        request.setUrl(QUrl("http://jsonplaceholder.typicode.com/idk" // this will fail as it is an incorrect url
+        request.setUrl(QUrl("http://jsonplaceholder.typicode.com/users/" // this will fail as it is an incorrect url
 
             + QString::number(postId)));
 
